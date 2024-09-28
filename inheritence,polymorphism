@@ -1,0 +1,77 @@
+//Create a base class Vehicle and derived classes Car, Truck.
+//Demonstrate polymorphism using method overriding.
+
+static void Main(string[] args)
+{
+    Console.WriteLine("enter the type of vehicle diesel or petrol:");
+    string type = Console.ReadLine();
+    Console.WriteLine("enter the type of wheels 4 or 6:");
+    int wheels = Convert.ToInt32(Console.ReadLine());
+    vehicle v = new vehicle();
+    car c = new car();
+    
+    string res = c.FullCheck(type, wheels);
+    string res1 = v.FullCheck(type, wheels);
+    Console.WriteLine(res);
+    Console.ReadLine();
+}
+public class vehicle
+{
+   
+    public  virtual string FullCheck(string engine,int wheels)
+    {
+        if (engine == "diesel"&&wheels==4)
+        {
+            return "mileage vehicle";
+        }
+        else if (engine == "petrol"&&wheels==6)
+        {
+            return "not a mileage vehicle";
+        }
+        else
+        {
+            return "not a good vehicle";
+        }
+        
+    }
+}
+public class  car : vehicle 
+{
+    public override string FullCheck(string engine, int wheels)
+    {
+        if (engine == "diesel" && wheels == 3)
+        {
+            return "it may be auto";
+        }
+        else if(engine == "petrol" && wheels == 12)
+        {
+            return "it  may be  truck";
+        }
+        else
+        {
+            return "enter valid information";
+        }
+    }
+}
+public class truck:vehicle 
+{
+    public override string FullCheck(string engine, int wheels)
+    {
+        if (engine == "diesel" && wheels == 3)
+        {
+            return "it may be auto";
+        }
+        else if (engine == "petrol" && wheels == 12)
+        {
+            return "it  may be  truck";
+        }
+        else
+        {
+            return "enter valid information";
+        }
+    
+
+}
+
+}
+
