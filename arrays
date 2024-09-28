@@ -1,0 +1,45 @@
+//Create an array to store 10 integers and perform linear search.
+static void Main(string[] args)
+{
+    int[] x = new int[10] { 4, 54, 56, 67, 34, 2, 33, 4, 35, 55};
+    Console.WriteLine("enter the number to search:");
+    int num = Convert.ToInt32((Console.ReadLine()));
+    for(int i = 0; i <= x.Length; i++)
+    {
+        if (x[i] == num)
+        {
+            Console.WriteLine($"index is found at{i}");
+        }
+        else
+        {
+            Console.WriteLine("index not found");
+        }
+    }
+    Console.ReadLine();
+}
+
+//Write a program to find the sum of all elements in an array.
+static void Main(string[] args)
+  {
+      
+      int[] x = new int[10] { 45, 657, 345, 56, 34, 56, 456, 465, 67, 67 };
+      int sum = x[0];
+      for (int i = 0; i <= x.Length; i++)
+      {
+          sum = sum +i;
+
+      }
+      Console.WriteLine("sum is:"+sum);
+          
+      Console.ReadLine();
+  }
+
+
+
+//3. Create an array to store 5 employee names and salaries.
+static void Main(string[] args)
+ {
+
+     string[] names = new string[5] { "moin", "mukesh", "suresh", "mahesh", "somesh" };
+     float[] salary = new float[names.Length];
+     }
