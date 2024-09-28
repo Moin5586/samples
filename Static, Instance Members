@@ -1,0 +1,45 @@
+//Create a MathOperations class with static and instance methods.
+//Use this keyword to access instance members.
+
+ static void Main(string[] args)
+ {
+     Console.WriteLine("enter the value of x:");
+     int  x = Convert.ToInt32(Console.ReadLine());
+     Console.WriteLine("enter the value of y:");
+     int y = Convert.ToInt32(Console.ReadLine());
+     mathoperation m = new mathoperation();
+     Console.WriteLine("addition is:"+mathoperation.add(x,y));
+     Console.WriteLine("subtractionn is:"+mathoperation.subtract(x, y));
+     Console.WriteLine("multipilication is:"+m.mul(x, y));
+     Console.WriteLine("division is:"+m.divide(x, y));
+
+     Console.ReadLine();
+ }
+
+public class mathoperation
+{
+    public mathoperation(itn x,int y)
+{
+       this x=x;
+       this.y=y;
+}
+ public static int add(int x,int y)
+    {
+        return x + y;
+    }
+    public static float subtract(float x,float y)
+    {
+        return x - y;
+    }
+    public int mul(int x,int y)
+    {
+        return this.x *this. y;
+    }
+    public  double divide(int x, int y)
+    {
+        return this.x /this. y;
+    }
+        
+
+       
+}
