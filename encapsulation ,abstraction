@@ -1,0 +1,30 @@
+//Create a BankAccount class with encapsulated properties (account number, balance).
+static void Main(string[] args)
+{
+    Console.WriteLine("enter the accnumber:");
+    int accnumber = Convert.ToInt32(Console.ReadLine());
+    BankAccount ba = new BankAccount();
+    int balance = ba.CheckBalance(accnumber);
+    
+    Console.ReadLine();
+}
+public class BankAccount
+{
+    public string name="moin";
+    public int acc_number=3456;
+    public int balance;
+
+
+    public int CheckBalance(int acc_number)
+    {
+        if (acc_number ==0111)
+        {
+            return 100000;
+        }
+        else if (acc_number == 0123)
+        {
+            return 454654;
+        }
+    }
+}
+
