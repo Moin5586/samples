@@ -1,0 +1,59 @@
+//greatest of three numbers
+static void Main(string[] args)
+{
+    Console.WriteLine("enter the first num:");
+    int x = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("enter the second num:");
+    int y = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("enter the third num:");
+    int z = Convert.ToInt32(Console.ReadLine());
+    if (x > y && x > z)
+    {
+        Console.WriteLine(x+"is greatest");
+    }
+    else if(y>x&& y > z)
+    {
+        Console.WriteLine(y+"is greatest");
+    }
+    else
+    {
+        Console.WriteLine(z+"is greatest");
+    }
+    Console.ReadLine();
+}
+
+
+// first 10even numbers
+ static void Main(string[] args)
+ {
+     int numbers ;
+     for(int i = 1; i <= 10; i++)
+     {
+         numbers=i*2;
+             Console.WriteLine(numbers);
+
+         
+     }
+     Console.ReadLine();
+    
+ }
+//prime number
+static void Main(string[] args)
+{
+    Console.WriteLine("enter the number:");
+    int num = Convert.ToInt32(Console.ReadLine());
+    int count = 0;
+    for(int i = 1; i <= num; i++)
+    {
+        if (num % i == 0)
+        {
+            count++;
+        }
+    }
+    if (count == 2)
+    {
+        Console.WriteLine("the number is prime number");
+    }
+    else {
+        Console.WriteLine("not a prime number");
+    }
