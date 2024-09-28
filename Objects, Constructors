@@ -1,0 +1,64 @@
+//TWO STUDENT/
+ static void Main(string[] args)
+ {
+     stuudent s1 = new stuudent("moin", 22,'A');
+     stuudent s2 = new stuudent("mahesh", 23, 'A');
+     Console.WriteLine(s1.name);
+     Console.ReadLine();
+
+ }
+class stuudent
+{
+    public string name;
+    public int age;
+    public char grade;
+
+    public stuudent(string name, int age, char grade)
+    {
+        this.name = name;
+        this.age = age;
+        this.grade = grade;
+       
+    }
+}
+
+
+//greatest of three numbers
+static void Main(string[] args)
+{
+    Console.WriteLine("enter the first num:");
+    int x = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("enter the second num:");
+    int y = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("enter the third num:");
+    int z = Convert.ToInt32(Console.ReadLine());
+    if (x > y && x > z)
+    {
+        Console.WriteLine(x+"is greatest");
+    }
+    else if(y>x&& y > z)
+    {
+        Console.WriteLine(y+"is greatest");
+    }
+    else
+    {
+        Console.WriteLine(z+"is greatest");
+    }
+    Console.ReadLine();
+}
+
+
+// first 10even numbers
+ static void Main(string[] args)
+ {
+     int numbers ;
+     for(int i = 1; i <= 10; i++)
+     {
+         numbers=i*2;
+             Console.WriteLine(numbers);
+
+         
+     }
+     Console.ReadLine();
+    
+ }
